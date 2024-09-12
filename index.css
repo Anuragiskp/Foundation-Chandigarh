@@ -1,0 +1,118 @@
+.navbar-container{
+    position:absolute;
+    z-index: 40;
+    right: 0px;
+    background-color: gray;
+    border-radius: 5px;
+}
+#navbar-menu{
+    display:block;
+    /* background: transparent; */
+    padding:0;
+}
+#navbar-menu-container{
+    padding:0;
+    border-radius: 10px;
+}
+
+.custom-toggler .navbar-toggler-icon {
+    width: 2em; /* Increase width */
+    height: 2em; /* Increase height */
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='%239acd32' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+}
+
+
+.custom-toggler {
+padding: 0.75rem 1.25rem; /* Increase padding */
+color: rgb(203, 247, 116);
+}
+
+/* Center-align dropdown links */
+.navbar-nav {
+display: flex;
+flex-direction: column;
+align-items: center;
+text-align: center; /* Align text in the center */
+}
+
+.dropdown-menu {
+text-align: center;
+}
+
+.nav-link{
+    color:rgb(203, 247, 116)
+}
+
+/* Optional: To ensure dropdown menu items take the full width */
+.dropdown-menu .dropdown-item {
+width: 100%;
+text-align: center;
+}
+
+#scroll-to-top-button{
+    background-color: rgb(182, 232, 84);
+    color: black
+}
+.dividing-line-container{
+    display:flex;
+    justify-content: space-around;
+}
+.dividing-line{
+    text-align:center;
+    width: 80%;
+    border: solid 3px rgb(138, 206, 2);
+    height: 8px;
+    background-color: rgb(138, 206, 2);
+}
+
+/* HOMEPAGE ABOUT */
+
+.homepage-about-container{
+    display:flex;
+    justify-content:center;
+    width: 100%;
+    margin-bottom: 5%;
+}
+.homepage-about{
+    width: 80%;
+    display:flex;
+    justify-content: space-between;
+    align-items:center;
+}
+
+.homepage-about-links{
+    /* width: 100%; */
+    margin-right: 5%;
+    /* width: 50%; */
+}
+
+.homepage-about-link{
+    color: rgb(75, 74, 74);
+    font-size: 1.25em
+}
+
+.homepage-about-link:hover{
+    color:rgb(126, 187, 4)
+}
+
+.about-social-links{
+    margin-right: 3%;
+}
+
+@media(max-width: 600px)
+{
+    .homepage-about{
+        flex-direction: column;
+        align-items: start;
+    }
+    .homepage-about-links{
+        margin-right:0;
+        margin-bottom: 10%;
+    }
+    .homepage-about-link{
+        width: 100%;
+    }
+    .about-social-links{
+        margin-bottom: 10%;
+    }
+}
