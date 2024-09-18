@@ -32,55 +32,60 @@
 
 <body class="index-page">
 
-  <header id="header" class="header d-flex align-items-center position-relative">
+  <header id="header">
     <!-- <div class="container-fluid container-xl position-relative d-flex" id="header-container"> -->
     <div id="header-container">
         <!-- Uncomment the line below if you also wish to use an image logo -->
         <img src="assets/img/logo.jpeg" alt="FCH" class="logo-fch">
     </div>
+
+      
+    <div class="navbar-container">
+      <nav class="navbar" id="navbar-menu">
+        <div class="container-fluid" id="navbar-menu-container">
+      
+          <!-- Toggler/collapsible Button (always visible) -->
+          <button class="navbar-toggler custom-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation" id="toggler-button">
+            <!-- <span class="navbar-toggler-icon"></span> -->
+            <hr class="toggler-line"></hr>
+            <hr class="toggler-line"></hr>
+            <hr class="toggler-line"></hr>
+          </button>
+      
+          <!-- Navbar links (always collapsible) -->
+          <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">About</a></li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Projects</a></li>
+              <!-- <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Dropdown
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+                </ul>
+              </li> -->
+              <li class="nav-item">
+                <a class="nav-link" href="#">Collaborations</a>
+              </li>
+              <li class="nav-item"></li>
+                <a class="nav-link" href="#">News</a>
+              </li>
+            </ul>
+            <!-- <i class="mobile-nav-toggle d-xl-none bi bi-list"></i> -->
+          </div>
+        </div>
+      </nav>
+    </div>
   </header>
 
-  <div class="navbar-container">
-    <nav class="navbar" id="navbar-menu">
-      <div class="container-fluid" id="navbar-menu-container">
-    
-        <!-- Toggler/collapsible Button (always visible) -->
-        <button class="navbar-toggler custom-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-    
-        <!-- Navbar links (always collapsible) -->
-        <div class="collapse navbar-collapse" id="navbarNavDropdown">
-          <ul class="navbar-nav">
-            <li class="nav-item">
-              <a class="nav-link" aria-current="page" href="#">Home</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">About</a></li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Projects</a></li>
-            <!-- <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                Dropdown
-              </a>
-              <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                <li><a class="dropdown-item" href="#">Action</a></li>
-                <li><a class="dropdown-item" href="#">Another action</a></li>
-                <li><a class="dropdown-item" href="#">Something else here</a></li>
-              </ul>
-            </li> -->
-            <li class="nav-item">
-              <a class="nav-link" href="#">Collaborations</a>
-            </li>
-            <li class="nav-item"></li>
-              <a class="nav-link" href="#">News</a>
-            </li>
-          </ul>
-          <!-- <i class="mobile-nav-toggle d-xl-none bi bi-list"></i> -->
-        </div>
-      </div>
-    </nav>
-  </div>
   
   <main class="main">
 
@@ -159,6 +164,7 @@
           <a href="" class="homepage-about-link">Projects &nbsp;</a> 
           <a href="#" class="homepage-about-link">Collaborations &nbsp;</a> 
           <a href="#" class="homepage-about-link">News &nbsp;</a>
+          <p style="font-size:0.75em; margin-top: 3%">Foundation Chandigarh is a non-profit institution listed nº1818 in the National Public Register of Cultural Foundations, Ministry of Justice of the Government of Spain.</p>
         </div>
   
         <div class="about-social-links">
@@ -166,22 +172,24 @@
           <!-- <a href="#" class="homepage-about-link">Instagram</a><span style="font-size:1.25em"> | </span>
           <a href="#" class="homepage-about-link">Facebook</a><span style="font-size:1.25em"> | </span>
           <a href="#" class="homepage-about-link">X</a> -->
-          <a href="#" class="homepage-about-link">Instagram</a>
-          <a href="#" class="homepage-about-link">Facebook</a>
-          <a href="#" class="homepage-about-link"><p>X</p></a>
+          <a href="#" class="homepage-about-link">Instagram &nbsp;</a>
+          <a href="#" class="homepage-about-link">Facebook &nbsp;</a>
+          <a href="#" class="homepage-about-link">X </a>
         </div>
 
-        <div class="about-social-links"></div>
-          <p style="font-size:1.25em">Foundation Chandigarh is a non-profit institution listed nº1818 in the National Public Register of Cultural Foundations, Ministry of Justice of the Government of Spain.</p>
+        <!-- <div class="about-social-links"></div>
+          <p style="font-size:0.85em">Foundation Chandigarh is a non-profit institution listed nº1818 in the National Public Register of Cultural Foundations, Ministry of Justice of the Government of Spain.</p>
+        </div> -->
+
+        <div class="homepage-about-address">
+          <p>797, Phase 3B-1, Mohali, India | +91- 9988096668</p>
         </div>
 
         <!-- <div class="about-social-links"></div>
           <p>Foundation Chandigarh is a non-profit institution listed nº1818 in the National Public Register of Cultural Foundations, Ministry of Justice of the Government of Spain.</p>
         </div> -->
       </div>
-      <div class="homepage-about-address">
-        <p>797, Phase 3B-1, Mohali, India | +91- 9988096668</p>
-      </div>
+      
     </div>
     
     
