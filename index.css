@@ -1,3 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+.main{
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
 #header{
     width: 100%;
 }
@@ -15,15 +23,21 @@
 
 /* OLD NAVBAR CODE */
 
+#navbarNavDropdown {
+   position:absolute;
+   right: 100%;
+   /* z-index: 9999; */
+  }
+
 .navbar-container{
     /* position:absolute; */
     z-index: 40;
-    /* right: 0px; */
     background-color: white;
     border: none;
     /* border-radius: 5px; */
     display:flex;
     justify-content:end;
+    margin-right: 10px;
 }
 #navbar-menu{
     display:block;
@@ -34,6 +48,16 @@
     padding:0;
     border-radius: 10px;
     margin-right: 20px;
+}
+
+.nav-item {
+    margin-right: 10px; /* Add some space between items */
+}
+
+.nav-link {
+    padding: 10px 15px;
+    text-align: center; 
+    color:rgb(53, 53, 52);
 }
 
 /* NEW NAVBAR CODE */
@@ -56,19 +80,25 @@
     padding:0;
     /* margin-right: */
     text-align:center;
-    margin-right: 5%
+    /* margin-right: 10% */
     /* background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='%239acd32' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E"); */
 }
 #toggler-button{
     padding:0;
 }
 .toggler-line{
-    width: 70px;
-    height: px;
-    background-color: rgb(46, 134, 2);
+    width: 90px;
+    background-color: rgb(25, 72, 2);
     margin: 10%;
 }
 
+.navbar-toggler {
+    border: none; /* Remove the border */
+    outline: none; /* Remove the outline (if any) */
+    box-shadow: none; /* Remove any potential shadow */
+    background-color: transparent; /* Optional: Make the background transparent if you want */
+    padding: 0; /* Adjust padding if needed */
+  }
 
 .custom-toggler {
 /* padding: 0.75rem 1.25rem; Increase padding */
@@ -79,17 +109,13 @@ width: 90px;
 /* Center-align dropdown links */
 .navbar-nav {
 display: flex;
-flex-direction: column;
+flex-direction: row;
 align-items: center;
 text-align: center; /* Align text in the center */
 }
 
 .dropdown-menu {
 text-align: center;
-}
-
-.nav-link{
-    color:rgb(203, 247, 116);
 }
 
 /* Optional: To ensure dropdown menu items take the full width */
@@ -117,9 +143,23 @@ text-align: center;
 
 /* CAROUSEL  */
 
-/* #hero-carousel{
-    height: 50px !important; 
-} */
+#hero{
+    height: 600px; 
+}
+
+.carousel-item img {
+    height: 600px;
+    object-fit: cover; /* Ensure the image covers the area without stretching */
+    width: 100%; /* Ensure the images fill the entire width */
+  }
+
+  .carousel-container {
+    position: absolute;
+    bottom: 20px; /* Adjust vertical position of text */
+    left: 20px; /* Adjust horizontal position of text */
+    color: white; /* Ensure text color is visible on the image */
+    max-width: 70%; /* Prevent the text from stretching too far */
+  }
 
 /* HOMEPAGE ABOUT */
 
@@ -139,7 +179,7 @@ text-align: center;
 .homepage-about-links{
     /* width: 100%; */
     margin-right: 3%;
-    width: 58%;
+    width: 33%;
     /* width: 50%; */
 }
 
@@ -147,6 +187,7 @@ text-align: center;
     color: rgb(75, 74, 74);
     font-size: .9em;
     font-weight: 500;
+    font-weight: 600;
 }
 
 .homepage-about-link:hover{
@@ -154,8 +195,8 @@ text-align: center;
 }
 
 .about-social-links{
-    margin-right: 1%;
-    width: 40%;
+    margin-right: 5%;
+    width: 33%;
     text-align:justify;
     /* font-size: 1.25em; */
 }
@@ -165,10 +206,55 @@ text-align: center;
     display:flex;
     justify-content: center;
     font-size: .9em;
+    width: 33%;
 }
 
 @media(max-width: 600px)
 {
+
+    #navbarNavDropdown {
+        position: fixed; /* Make it fixed to cover the entire screen */
+        top: 0;
+        left: 0;
+        width: 100vw; /* Full width of the viewport */
+        height: 100vh; /* Full height of the viewport */
+        background-color: rgba(0, 0, 0, 0.9); /* Dark background for fullscreen effect */
+        flex-direction: column; /* Stack items vertically */
+        justify-content: center; /* Center items vertically */
+        align-items: center; /* Center items horizontally */
+        padding: 0;
+        z-index: 1000; /* Ensure it is on top of all content */
+      }
+    
+      /* Adjust the dropdown items for fullscreen */
+      .navbar-nav {
+        flex-direction: column; /* Make items vertical */
+        text-align: center;
+      }
+    
+      .nav-item {
+        margin: 20px 0; /* Add space between menu items */
+      }
+    
+      .nav-link {
+        font-size: 1.5rem; /* Make links larger for better touch targets */
+        color: white; /* White text for visibility */
+      }
+    
+      /* Optional: Adjust the toggler button for small screens */
+      .navbar-toggler {
+        position: absolute;
+        top: 10px;
+        left: 10px;
+        z-index: 1001; /* Keep it on top of the dropdown */
+      }
+    
+      /* Optional hover/focus effects for better UI */
+      .nav-link:hover, .nav-link:focus {
+        background-color: transparent;
+        color: lightgray;
+      }
+
     .homepage-about{
         flex-direction: column;
         align-items: top;
