@@ -59,6 +59,9 @@
     text-align: center; 
     color:rgb(53, 53, 52);
 }
+.nav-link:hover{
+    color: rgb(127, 187, 7);
+}
 
 /* NEW NAVBAR CODE */
 
