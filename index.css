@@ -1,9 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
 :root {
     --background-color:none;
     --default-color: #212529;
     --heading-color: #2d465e;
-    --accent-color: #116530;
+    --accent-color: yellowgreen;
   }
 
 .main{
@@ -11,7 +12,11 @@
     font-weight: 400;
     font-style: normal;
 }
-
+.heading-text{
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
 #header{
     width: 100%;
 }
@@ -26,6 +31,10 @@
 .logo-fch{
     height: 70px;
 }
+/* .logo-fch{
+    height: 70px;
+    margin-right: 2%;
+} */
 
 /* OLD NAVBAR CODE */
 
@@ -43,17 +52,23 @@
     /* border-radius: 5px; */
     display:flex;
     justify-content:end;
-    margin-right: 10px;
+    /* margin-right: 10px; */
+    margin-right: 25px;
+    align-items:center;
 }
 #navbar-menu{
     display:block;
     /* background: transparent; */
     padding:0;
+    /* margin-top: 5%; */
+    margin-bottom:0;
+    /* height: 25px; */
 }
 #navbar-menu-container{
     padding:0;
     border-radius: 10px;
     margin-right: 20px;
+    /* margin-top: 10px; */
 }
 
 .nav-item {
@@ -81,12 +96,19 @@
 #toggler-button{
     padding:0;
     margin-right: 10px;
+    display:flex;
+    flex-direction: column;
+    /* margin-bottom: 5%; */
+    align-items:top;
 }
 .toggler-line{
     width: 125px;
-    background-color: rgb(25, 72, 2);
+    height: 2px;
+    background-color: yellowgreen;
     margin:0;
-    margin-bottom: 8%;
+    margin-left: 15px;
+    margin-bottom:5%;
+    opacity:1;
 }
 
 .navbar-toggler {
@@ -170,7 +192,34 @@ text-align: center;
 .carousel-container h2{
     text-align:center;
     color: white;
+    font-size: 2em;
+    /* font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal; */
 }   
+
+
+/* VIDEO AREA */
+
+#view-more-btn{
+    background-color: blue;
+}
+
+.custom-play-btn {
+    color: blue; /* Change this to your desired color */
+}
+/* ABOUT SECTION */
+
+#about{
+    margin-top: 7%;
+}
+
+/* EVENT SECTION */
+
+ #card-image{
+    height: 500px;
+    width: 100%;
+ }
 
 /* HOMEPAGE ABOUT */
 
@@ -207,16 +256,18 @@ text-align: center;
 
 .about-social-links{
     margin-right: 5%;
-    width: 33%;
+    width: 15%;
     text-align:justify;
     /* font-size: 1.25em; */
 }
-
-.homepage-about-address{
-    /* width: ; */
-    font-size: .65em;
-    
+#social-link{
+    margin: 2%;
+    size: 1.5em;
 }
+
+/* .homepage-about-address{
+    font-size: .65em;
+} */
 
 @media(max-width: 600px)
 {
@@ -286,24 +337,34 @@ text-align: center;
         padding: 5%;
     }
 }
+
+
 /* SUBSCRIPTION FORM */
 
+#form-field-container{
+    display:flex;
+    align-items:center;
+    justify-content: space-between;
+    width: 100%;
+}
+
 #subscription-form-textfield{
-    border-color: yellowgreen;
+    border:none;
+    font-size: 0.7em;
 }
 #subscription-form-button{
-    background-color: yellowgreen;
-    border-color: yellowgreen;
+    background-color: white;
+    color:rgb(98, 98, 98);
+    border: solid gray 1px;
+    border-radius:0;
+    margin-left: 5px;
+    width: 40%;
+    text-align:center;
+    padding:1%;
+    font-size: 0.7em;
 }
-
-/* VIDEO AREA */
-
-#view-more-btn{
-    background-color: blue;
-}
-
-/* ABOUT SECTION */
-
-#about{
-    margin-top: 7%;
+.form-caption{
+    text-align:center;
+    font-size: 0.8em;
+    font-weight: 500;
 }
