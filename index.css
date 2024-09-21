@@ -30,6 +30,7 @@
 
 .logo-fch{
     height: 70px;
+    width: 142px;
 }
 /* .logo-fch{
     height: 70px;
@@ -61,18 +62,18 @@
     /* background: transparent; */
     padding:0;
     /* margin-top: 5%; */
-    margin-bottom:0;
+    margin-bottom:0%;
     /* height: 25px; */
 }
 #navbar-menu-container{
     padding:0;
     border-radius: 10px;
     margin-right: 20px;
-    /* margin-top: 10px; */
 }
 
 .nav-item {
     margin-right: 10px; /* Add some space between items */
+    margin-bottom: 2px;
 }
 
 .nav-link {
@@ -102,11 +103,11 @@
     align-items:top;
 }
 .toggler-line{
-    width: 125px;
+    width: 130px;
     height: 2px;
     background-color: yellowgreen;
     margin:0;
-    margin-left: 15px;
+    margin-left: 13px;
     margin-bottom:5%;
     opacity:1;
 }
@@ -163,20 +164,18 @@ text-align: center;
 /* CAROUSEL  */
 
 #hero{
-    height: 550px; 
+    height: 600px; 
     background: none;
+    width: 100%;
 }
 
 .carousel-item img {
     /* filter: brightness(0.8) contrast(1) saturate(1.3); */
-    height: 550px;
-    object-fit: cover; /* Ensure the image covers the area without stretching */
+    height: 600px;
+    object-fit:cover; /* Ensure the image covers the area without stretching */
     width: 100%; /* Ensure the images fill the entire width */
+    /* transform: scale(0.8); */
 }
-/* #hero.dark-background {
-    background-color: transparent !important; 
-    background-image: none !important; 
-} */
 
 .carousel-container {
     position: absolute;
@@ -201,13 +200,48 @@ text-align: center;
 
 /* VIDEO AREA */
 
-#view-more-btn{
-    background-color: blue;
-}
+/* Container styling */
+/* Styling for the container */
+.video-section-container {
+    position: relative;
+    display:flex;
+    justify-content:center;
+    width: 100%;
+    height: 975px;
+    /* margin: 0 auto; */
+  }
+  
+  /* Thumbnail image */
+  .video-thumbnail {
+    width: 100%;
+    height: 975px;
+    cursor: pointer;
+    /* object-fit:cover; */
+  }
+  
+  /* Play button styling */
+  .play-button-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 10;
+    cursor: pointer;
+  }
+  
+  #play-button-icon {
+    font-size: 50px;
+    color: white;
+  }
+  
+  /* Video should be hidden initially */
+  #video {
+    display: none;
+    width: 100%;
+    height: auto;
+  }
+  
 
-.custom-play-btn {
-    color: blue; /* Change this to your desired color */
-}
 /* ABOUT SECTION */
 
 #about{
@@ -264,6 +298,17 @@ text-align: center;
     margin: 2%;
     size: 1.5em;
 }
+
+#subscription-form-textfield {
+    outline: none; /* Removes the blue border */
+    border: none; /* Removes any existing border */
+  }
+  
+  /* Optional: If you want to keep a border but change its color on focus */
+  #subscription-form-textfield:focus {
+    outline: none; /* Remove the default focus outline */
+    border: none; /* You can set this to a custom color if needed */
+  }
 
 /* .homepage-about-address{
     font-size: .65em;

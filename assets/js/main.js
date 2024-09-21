@@ -157,3 +157,25 @@
   });
 
 })();
+
+// Get the thumbnail, video, and play button elements
+const thumbnail = document.getElementById('video-thumbnail');
+const video = document.getElementById('video');
+const playButton = document.getElementById('play-button-icon');
+
+// Function to play video and hide thumbnail and play button
+function playVideo() {
+  // Hide the thumbnail and play button
+  thumbnail.style.display = 'none';
+  playButton.style.display = 'none';
+
+  // Show the video and play it
+  video.style.display = 'block';
+  video.play();
+}
+
+// Add event listener to the play button
+playButton.addEventListener('click', playVideo);
+
+// Optional: Also make the thumbnail clickable to play the video
+thumbnail.addEventListener('click', playVideo);
