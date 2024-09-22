@@ -179,3 +179,14 @@ playButton.addEventListener('click', playVideo);
 
 // Optional: Also make the thumbnail clickable to play the video
 thumbnail.addEventListener('click', playVideo);
+
+// TOGGLER BUTTON RESPONSIVENESS
+
+// const togglerButton = document.getElementById('toggler-button');
+// const navbarMenu = document.getElementById('navbarNavDropdown');
+
+// // Add an event listener to toggle the class when the button is clicked
+// togglerButton.addEventListener('click', function () {
+//   navbarMenu.classList.toggle('show');  // Bootstrap adds "show" class when dropdown is opened
+//   togglerButton.classList.toggle('toggler-top-right');
+// });

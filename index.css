@@ -319,6 +319,36 @@ text-align: center;
     font-size: .65em;
 } */
 
+/* SUBSCRIPTION FORM */
+
+#form-field-container{
+    display:flex;
+    align-items:center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+#subscription-form-textfield{
+    border:none;
+    font-size: 0.7em;
+}
+#subscription-form-button{
+    background-color: white;
+    color:rgb(98, 98, 98);
+    border: solid gray 1px;
+    border-radius:0;
+    margin-left: 5px;
+    width: 40%;
+    text-align:center;
+    padding:1%;
+    font-size: 0.7em;
+}
+.form-caption{
+    text-align:center;
+    font-size: 0.8em;
+    font-weight: 500;
+}
+
 @media(max-width: 600px)
 {
 
@@ -353,25 +383,61 @@ text-align: center;
     
       /* Optional: Adjust the toggler button for small screens */
       .navbar-toggler {
-        position: absolute;
+        display:block;
+        /* position: absolute;
         top: 10px;
-        left: 10px;
-        z-index: 1001; /* Keep it on top of the dropdown */
+        left: 10px; */
+        z-index: 1001; 
       }
+      /* When the menu is opened and the class is added */
+        #toggler-button.toggler-top-right {
+            position: absolute; /* Position it absolutely */
+            top: 10px; /* Adjust the top margin to place it below the top */
+            right: 10px; /* Align it to the right of the screen */
+            z-index: 1000; /* Ensure it is above other elements */
+        }
+
+        .navbar-toggler {
+            padding: 10px; /* Adjust padding for better clickability */
+        }
+        
+        /* Optional hover/focus effects for better UI */
+        .nav-link:hover, .nav-link:focus {
+            background-color: transparent;
+            color: lightgray;
+        }
     
-      /* Optional hover/focus effects for better UI */
-      .nav-link:hover, .nav-link:focus {
-        background-color: transparent;
-        color: lightgray;
+    .carousel-container {
+        width: 70%;
+    }
+
+    .video-section-container {
+        height: 500px;
       }
+
+    .video-thumbnail{
+        height: 500px;
+    }
+    /* .play-button-container {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        z-index: 10;
+        cursor: pointer;
+      } */
 
     .homepage-about{
         flex-direction: column;
         align-items: top;
+        width: 100%;
+        align-content:center;
     }
     .homepage-about-links{
         margin-right:0;
         margin-bottom: 10%;
+        width: 100%;
+        padding: 5%;
     }
     .homepage-about-link{
         width: 100%;
@@ -380,6 +446,8 @@ text-align: center;
         margin-bottom: 10%;
         align-items: flex-start;
         height: 100%;
+        width: 100%;
+        text-align:left;
     }
     .homepage-about-address{
         width: 100%;
@@ -389,32 +457,3 @@ text-align: center;
 }
 
 
-/* SUBSCRIPTION FORM */
-
-#form-field-container{
-    display:flex;
-    align-items:center;
-    justify-content: space-between;
-    width: 100%;
-}
-
-#subscription-form-textfield{
-    border:none;
-    font-size: 0.7em;
-}
-#subscription-form-button{
-    background-color: white;
-    color:rgb(98, 98, 98);
-    border: solid gray 1px;
-    border-radius:0;
-    margin-left: 5px;
-    width: 40%;
-    text-align:center;
-    padding:1%;
-    font-size: 0.7em;
-}
-.form-caption{
-    text-align:center;
-    font-size: 0.8em;
-    font-weight: 500;
-}
