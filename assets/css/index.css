@@ -1,0 +1,473 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+:root {
+    --background-color:none;
+    --default-color: #212529;
+    --heading-color: #2d465e;
+    --accent-color: yellowgreen;
+  }
+
+.main{
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+.heading-text{
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+#header{
+    width: 100%;
+}
+
+#header-container{
+    margin: 0;
+    display:flex;
+    justify-content: end;
+    width: 100%;
+}
+
+.logo-fch{
+    height: 70px;
+    width: 142px;
+}
+/* .logo-fch{
+    height: 70px;
+    margin-right: 2%;
+} */
+
+/* OLD NAVBAR CODE */
+
+#navbarNavDropdown {
+   position:absolute;
+   right: 100%;
+   top: 40%;
+   /* z-index: 9999; */
+  }
+
+.navbar-container{
+    /* position:absolute; */
+    z-index: 40;
+    background-color: white;
+    border: none;
+    /* border-radius: 5px; */
+    display:flex;
+    justify-content:end;
+    /* margin-right: 10px; */
+    margin-right: 25px;
+    align-items:center;
+}
+#navbar-menu{
+    display:block;
+    /* background: transparent; */
+    padding:0;
+    /* margin-top: 5%; */
+    margin-bottom:0%;
+    /* height: 25px; */
+}
+#navbar-menu-container{
+    padding:0;
+    border-radius: 10px;
+    margin-right: 20px;
+}
+
+.nav-item {
+    margin-right: 10px; /* Add some space between items */
+    margin-bottom: 2px;
+}
+
+.nav-link {
+    padding: 10px 15px;
+    text-align: center; 
+    color:rgb(53, 53, 52);
+}
+.nav-link:hover{
+    color: rgb(127, 187, 7);
+}
+
+/* NEW NAVBAR CODE */
+
+.custom-toggler .navbar-toggler-icon {
+    width: 4em; /* Increase width */
+    height: 0.3em; /* Increase height */
+    padding:0;
+    /* margin-right: */
+    text-align:center;
+}
+#toggler-button{
+    padding:0;
+    margin-right: 10px;
+    display:flex;
+    flex-direction: column;
+    /* margin-bottom: 5%; */
+    align-items:top;
+}
+.toggler-line{
+    width: 130px;
+    height: 2px;
+    background-color: yellowgreen;
+    margin:0;
+    margin-left: 13px;
+    margin-bottom:5%;
+    opacity:1;
+}
+
+.navbar-toggler {
+    border: none; /* Remove the border */
+    outline: none; /* Remove the outline (if any) */
+    box-shadow: none; /* Remove any potential shadow */
+    background-color: transparent; /* Optional: Make the background transparent if you want */
+    padding: 0; /* Adjust padding if needed */
+  }
+
+.custom-toggler {
+/* padding: 0.75rem 1.25rem; Increase padding */
+color: transparent;
+width: 90px;
+}
+
+/* Center-align dropdown links */
+.navbar-nav {
+display: flex;
+flex-direction: row;
+align-items: center;
+text-align: center; /* Align text in the center */
+}
+
+.dropdown-menu {
+text-align: center;
+}
+
+/* Optional: To ensure dropdown menu items take the full width */
+.dropdown-menu .dropdown-item {
+width: 100%;
+text-align: center;
+}
+
+#scroll-to-top-button{
+    background-color: rgb(182, 232, 84);
+    color: black
+}
+.dividing-line-container{
+    display:flex;
+    justify-content: space-around;
+    margin-top: 1%;
+}
+.dividing-line{
+    text-align:center;
+    width: 80%;
+    border: solid 1px rgb(34, 34, 34);
+    /* height: 1px; */
+    /* background-color: rgb(138, 206, 2); */
+}
+
+/* CAROUSEL  */
+
+#hero{
+    height: 700px; 
+    width: 100%;
+    position:relative;
+    overflow:hidden;
+}
+
+/* .image-div{
+    
+    width: 1500px;
+    height: 700px;
+    background-image: url('/assets/img/carousel-img-1.jpg');
+    background-size:; 
+    background-repeat: no-repeat; 
+    background-position: center; 
+    
+} */
+
+.carousel-item img {
+    height: auto;
+    max-height:100%;
+    width: 100%; /* Ensure the images fill the entire width */
+    object-fit:fill;
+    /* transform: scale(0.8); */
+}
+
+.carousel-container {
+    position: absolute;
+    bottom: 20px; /* Adjust vertical position of text */
+    left: 20px; /* Adjust horizontal position of text */
+    color: white; /* Ensure text color is visible on the image */
+    width: 88%; /* Prevent the text from stretching too far */
+    display:flex;
+    justify-content: space-around;
+    background: none;
+}
+
+.carousel-container h2{
+    text-align:center;
+    color: white;
+    font-size: 2em;
+    /* font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal; */
+}   
+
+
+/* VIDEO AREA */
+
+/* Container styling */
+/* Styling for the container */
+.video-section-container {
+    position: relative;
+    display:flex;
+    justify-content:center;
+    width: 100%;
+    height: 975px;
+    /* margin: 0 auto; */
+    margin-top: 5%;
+    margin-bottom: 5%;
+  }
+  
+  /* Thumbnail image */
+  .video-thumbnail {
+    width: 100%;
+    height: 975px;
+    cursor: pointer;
+    /* object-fit:cover; */
+  }
+  
+  /* Play button styling */
+  .play-button-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 10;
+    cursor: pointer;
+  }
+  
+  #play-button-icon {
+    font-size: 50px;
+    color: white;
+  }
+  
+  /* Video should be hidden initially */
+  #video {
+    display: none;
+    width: 100%;
+    height: auto;
+  }
+  
+
+/* ABOUT SECTION */
+
+#about{
+    margin-top: 7%;
+}
+#view-more-btn{
+    background-color:blue;
+}
+
+/* EVENT SECTION */
+
+ #card-image{
+    height: 500px;
+    width: 100%;
+ }
+
+/* HOMEPAGE ABOUT */
+
+.homepage-about-container{
+    display:flex;
+    justify-content:center;
+    width: 100%;
+    margin-bottom: 3%;
+}
+.homepage-about{
+    width: 80%;
+    display:flex;
+    justify-content: space-between;
+    /* align-items:center; */
+}
+
+.homepage-about-links{
+    /* width: 100%; */
+    margin-right: 3%;
+    width: 33%;
+    /* width: 50%; */
+}
+
+.homepage-about-link{
+    color: rgb(93, 92, 92);
+    font-size: .8em;
+    font-weight: 500;
+    font-weight: 600;
+}
+
+.homepage-about-link:hover{
+    color:rgb(126, 187, 4)
+}
+
+.about-social-links{
+    margin-right: 5%;
+    width: 15%;
+    text-align:justify;
+    /* font-size: 1.25em; */
+}
+#social-link{
+    margin: 2%;
+    size: 1.5em;
+}
+
+#subscription-form-textfield {
+    outline: none; /* Removes the blue border */
+    border: none; /* Removes any existing border */
+  }
+  
+  /* Optional: If you want to keep a border but change its color on focus */
+  #subscription-form-textfield:focus {
+    outline: none; /* Remove the default focus outline */
+    border: none; /* You can set this to a custom color if needed */
+  }
+
+/* .homepage-about-address{
+    font-size: .65em;
+} */
+
+/* SUBSCRIPTION FORM */
+
+#form-field-container{
+    display:flex;
+    align-items:center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+#subscription-form-textfield{
+    border:none;
+    font-size: 0.7em;
+}
+#subscription-form-button{
+    background-color: white;
+    color:rgb(98, 98, 98);
+    border: solid gray 1px;
+    border-radius:0;
+    margin-left: 5px;
+    width: 40%;
+    text-align:center;
+    padding:1%;
+    font-size: 0.7em;
+}
+.form-caption{
+    text-align:center;
+    font-size: 0.8em;
+    font-weight: 500;
+}
+
+@media(max-width: 600px)
+{
+
+    #navbarNavDropdown {
+        position: fixed; /* Make it fixed to cover the entire screen */
+        top: 0;
+        left: 0;
+        width: 100vw; /* Full width of the viewport */
+        height: 100vh; /* Full height of the viewport */
+        background-color: rgba(0, 0, 0, 0.9); /* Dark background for fullscreen effect */
+        flex-direction: column; /* Stack items vertically */
+        justify-content: center; /* Center items vertically */
+        align-items: center; /* Center items horizontally */
+        padding: 0;
+        z-index: 1000; /* Ensure it is on top of all content */
+      }
+    
+      /* Adjust the dropdown items for fullscreen */
+      .navbar-nav {
+        margin-top: 40%;
+        flex-direction: column; /* Make items vertical */
+        text-align: center;
+      }
+    
+      .nav-item {
+        margin: 20px 0; /* Add space between menu items */
+      }
+    
+      .nav-link {
+        font-size: 1.5rem; /* Make links larger for better touch targets */
+        color: white; /* White text for visibility */
+      }
+    
+      /* Optional: Adjust the toggler button for small screens */
+      .navbar-toggler {
+        display:block;
+        /* position: absolute;
+        top: 10px;
+        left: 10px; */
+        z-index: 1001; 
+      }
+      /* When the menu is opened and the class is added */
+        #toggler-button.toggler-top-right {
+            position: absolute; /* Position it absolutely */
+            top: 10px; /* Adjust the top margin to place it below the top */
+            right: 10px; /* Align it to the right of the screen */
+            z-index: 1000; /* Ensure it is above other elements */
+        }
+
+        .navbar-toggler {
+            padding: 10px; /* Adjust padding for better clickability */
+        }
+        
+        /* Optional hover/focus effects for better UI */
+        .nav-link:hover, .nav-link:focus {
+            background-color: transparent;
+            color: lightgray;
+        }
+    
+    .carousel-container {
+        width: 70%;
+    }
+
+    .video-section-container {
+        height: 400px;
+      }
+
+    .video-thumbnail{
+        height: 400px;
+    }
+    /* .play-button-container {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        z-index: 10;
+        cursor: pointer;
+      } */
+
+    .homepage-about{
+        flex-direction: column;
+        align-items: top;
+        width: 100%;
+        align-content:center;
+    }
+    .homepage-about-links{
+        margin-right:0;
+        margin-bottom: 10%;
+        width: 100%;
+        padding: 5%;
+    }
+    .homepage-about-link{
+        width: 100%;
+    }
+    .about-social-links{
+        margin-bottom: 10%;
+        align-items: flex-start;
+        height: 100%;
+        width: 100%;
+        text-align:left;
+    }
+    .homepage-about-address{
+        width: 100%;
+        justify-content:center;
+        padding: 5%;
+    }
+}
+
+
