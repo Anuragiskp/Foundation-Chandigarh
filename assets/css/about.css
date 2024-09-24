@@ -2,13 +2,17 @@
     text-align:center;
 }
 
+#about-image-container{
+    width: 40%;
+}
+
 #about-us-image{
     height: 500px;
-    width: 80%;
+    width: 100%;
 }
 
 #about-us-content-container{
-    margin:0;
+    margin-left:4%;
     text-align:justify;
 }
 .service-item-content{
@@ -16,4 +20,11 @@
 }
 .service-heading{
     margin-bottom: 10%;
+}
+
+@media(max-width:992px){
+    #about-image-container{
+        width: 80%;
+        /* height: 10%; */
+    }
 }
