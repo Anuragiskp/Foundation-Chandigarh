@@ -424,6 +424,10 @@ text-align: center;
     .carousel-container {
         width: 70%;
     }
+    .carousel-item img{
+        object-fit: cover;
+        height:100%;
+    }
 
     .video-section-container {
         height: 400px;

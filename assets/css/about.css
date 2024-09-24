@@ -1,0 +1,19 @@
+.content-title{
+    text-align:center;
+}
+
+#about-us-image{
+    height: 500px;
+    width: 80%;
+}
+
+#about-us-content-container{
+    margin:0;
+    text-align:justify;
+}
+.service-item-content{
+    padding: 5%;
+}
+.service-heading{
+    margin-bottom: 10%;
+}
