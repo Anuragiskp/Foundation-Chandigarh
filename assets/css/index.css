@@ -29,8 +29,10 @@
 }
 
 .logo-fch{
-    height: 70px;
-    width: 142px;
+    height: 56px;
+    width: 114px;
+    /* position:absolute; */
+    margin-left: 30px;
 }
 /* .logo-fch{
     height: 70px;
@@ -42,7 +44,7 @@
 #navbarNavDropdown {
    position:absolute;
    right: 100%;
-   top: 40%;
+   top: 30%;
    /* z-index: 9999; */
   }
 
@@ -170,6 +172,9 @@ text-align: center;
     position:relative;
     overflow:hidden;
 }
+#hero-carousel{
+    height: 700px;
+}
 
 /* .image-div{
     
@@ -183,7 +188,7 @@ text-align: center;
 } */
 
 .carousel-item img {
-    height: auto;
+    height: 700px;
     max-height:100%;
     width: 100%; /* Ensure the images fill the entire width */
     object-fit:fill;
