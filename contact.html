@@ -95,8 +95,8 @@
             </nav> -->
             </div>
         </div><!-- End Page Title -->
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6860.407490005243!2d76.7158584923222!3d30.712672098375464!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4887198fc1a3ce3d%3A0xdc906b3dea21d62b!2sFoundation%20Chandigarh%20FCH!5e0!3m2!1sen!2sin!4v1727164949770!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-        <!-- https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3430.2621672875525!2d76.72374937625804!3d30.71102937459463!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390fee86e5ad88a9%3A0xa45dcb9a17927e0a!2sNoor%20Architects%20Consultants!5e0!3m2!1sen!2sin!4v1727111111462!5m2!1sen!2sin&iwloc=near -->
+        <!-- <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6860.407490005243!2d76.7158584923222!3d30.712672098375464!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4887198fc1a3ce3d%3A0xdc906b3dea21d62b!2sFoundation%20Chandigarh%20FCH!5e0!3m2!1sen!2sin!4v1727164949770!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe> -->
+        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d857.5654100254484!2d76.72577606958066!3d30.71104419841219!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sin!4v1727263642420!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
     </main>
     <div class='dividing-line-container'><hr class="dividing-line"></hr></div>
 
@@ -138,7 +138,7 @@
 <!-- <a href="#"  class="scroll-top d-flex align-items-center justify-content-center" id="scroll-to-top-button"><i class="bi bi-arrow-up-short" id="scroll-to-top-button"></i></a> -->
 
   <!-- Preloader -->
-  <div id="preloader"></div>
+  <!-- <div id="preloader"></div> -->
 
   <!-- Vendor JS Files -->
   <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
@@ -148,5 +148,11 @@
   <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
 
   <!-- Main JS File -->
+  <script>
+    function showAlert(event) {
+        event.preventDefault(); // Prevent the form from submitting
+        alert("E-mail recorded!");
+    }
+</script>
   <script src="assets/js/main.js"></script>
 </html>

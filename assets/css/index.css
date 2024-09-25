@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
 
 :root {
     --background-color:none;
@@ -13,9 +14,13 @@
     font-style: normal;
 }
 .heading-text{
-    font-family: "Roboto", sans-serif;
+    /* font-family: "Roboto", sans-serif;
     font-weight: 400;
-    font-style: normal;
+    font-style: normal; */
+    font-family: "Playfair Display", serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
 }
 #header{
     width: 100%;
@@ -427,13 +432,15 @@ text-align: center;
             background-color: transparent;
             color: lightgray;
         }
-    /* #hero{
-        height: 400px;
-    } */
-     /* .carousel-item{
-        height:400px;
-     } */
+    #hero{
+        height: 600px;
+    }
+     .carousel-item{
+        height:600px;
+     }
     .carousel-container {
+        /* height: 500px; */
+        height: 80%;
         width: 70%;
     }
     .carousel-item img{
