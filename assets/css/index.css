@@ -222,6 +222,34 @@ text-align: center;
     font-style: normal; */
 }   
 
+/* Optional: Reset any existing animation */
+.carousel-container h2 {
+    animation: none;
+    transform: none;
+}
+
+/* Fade-in animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+/* Apply the fade-in effect when the carousel item becomes active */
+.carousel-item.active .carousel-container h2 {
+    animation: fadeIn 0.5s ease-in-out;
+    opacity: 1;
+}
+
+/* Ensure the text is hidden when the carousel item is not active */
+.carousel-container h2 {
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out; /* Smooth transition */
+}
+
 
 /* VIDEO AREA */
 
@@ -437,7 +465,7 @@ text-align: center;
     }
      .carousel-item{
         height:600px;
-     }
+    }
     .carousel-container {
         /* height: 500px; */
         height: 80%;
@@ -447,6 +475,9 @@ text-align: center;
         /* object-fit: contain; */
         height:100%;
     }
+    .carousel-container h2{
+        font-size:1.6em;
+    }
 
     .video-section-container {
         height: 400px;
@@ -455,14 +486,6 @@ text-align: center;
     .video-thumbnail{
         height: 400px;
     }
-    /* .play-button-container {
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        z-index: 10;
-        cursor: pointer;
-      } */
 
     .homepage-about{
         flex-direction: column;

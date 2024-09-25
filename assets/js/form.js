@@ -1,1 +1,0 @@
-window.alert("Your email has been saved!")
