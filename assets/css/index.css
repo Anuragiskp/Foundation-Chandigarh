@@ -312,13 +312,36 @@ text-align: center;
     height: 500px;
     width: 100%;
  }
- /* #recent-posts .post-item {
-    opacity: 0;
-    transform: translateY(20px);
-    transition: opacity 0.6s ease-in-out, transform 0.6s ease-in-out;
+ @keyframes fadeInUp {
+    0% {
+      opacity: 0;
+      transform: translateY(20px); /* Slight upward movement */
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
   }
   
-  #recent-posts.show .post-item {
+  /* Initially hide the cards */
+  #recent-posts .post-item {
+    opacity: 0;
+    transform: translateY(20px); /* Optional: Slight upward movement */
+    animation: fadeInUp 0.6s ease-in-out forwards; /* Trigger the animation */
+  }
+  #recent-posts .post-item:nth-child(1) {
+    animation-delay: 0.1s;
+  }
+  
+  #recent-posts .post-item:nth-child(2) {
+    animation-delay: 0.2s;
+  }
+  
+  #recent-posts .post-item:nth-child(3) {
+    animation-delay: 0.3s;
+  }
+  
+  /* #recent-posts.show .post-item {
     opacity: 1;
     transform: translateY(0);
   } */
