@@ -76,12 +76,12 @@
   /**
    * Preloader
    */
-  // const preloader = document.querySelector('#preloader');
-  // if (preloader) {
-  //   window.addEventListener('load', () => {
-  //     preloader.remove();
-  //   });
-  // }
+  const preloader = document.querySelector('#preloader');
+  if (preloader) {
+    window.addEventListener('load', () => {
+      preloader.remove();
+    });
+  }
 
   /**
    * Scroll top button
@@ -109,7 +109,7 @@
    */
   function aosInit() {
     AOS.init({
-      duration: 400,
+      duration: 0,
       easing: 'ease-in-out',
       once: true,
       mirror: false
@@ -173,6 +173,13 @@ function playVideo() {
   video.style.display = 'block';
   video.play();
 }
+
+// document.addEventListener('DOMContentLoaded', function () {
+//   const recentPosts = document.getElementById('recent-posts');
+  
+//   // Add the 'show' class to trigger the CSS fade-in animation
+//   recentPosts.classList.add('show');
+// });
 
 // Add event listener to the play button
 playButton.addEventListener('click', playVideo);
